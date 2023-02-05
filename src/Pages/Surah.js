@@ -23,7 +23,7 @@ const Surah = () => {
       }
     };
     getData();
-  }, []);
+  }, [id]);
 
   // const [getSurat, setSurat] = React.useState(false);
   // useEffect(() => {
@@ -40,16 +40,16 @@ const Surah = () => {
       <div className="bg-base-200 min-h-screen pb-32 p-4 md:p-12">
         <div class="flex-inline  space-y-4 md:space-y-0 md:flex justify-center items-center md:justify-between">
           <div className={`${getApi.surat_sebelumnya ? "" : "hidden"} `}>
-            <a href={`/surah/${getApi.surat_sebelumnya?.id}`}>
-              <button className="btn w-full">← Surat Sebelumnya</button>
-            </a>
+            <Link to={`/surah/${getApi.surat_sebelumnya?.id}`}>
+              <a>
+                <button className="btn w-full">← Surat Sebelumnya</button>
+              </a>
+            </Link>
           </div>
           <div className="">
-            {/* <Link to={`/surah/${getApi.surat_selanjutnya?.id}`}>
-            </Link> */}
-            <a href={`/surah/${getApi.surat_selanjutnya?.id}`}>
+            <Link to={`/surah/${getApi.surat_selanjutnya?.id}`}>
               <button className="btn w-full">Surat Selanjutnya →</button>
-            </a>
+            </Link>
           </div>
         </div>
         {getLoading ? (
