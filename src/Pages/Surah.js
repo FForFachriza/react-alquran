@@ -102,7 +102,6 @@ const Surah = () => {
           </>
         )}
       </div>
-      <Navbar />
     </>
   );
 };

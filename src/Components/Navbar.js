@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" block md:hidden ">
+      <div className="fixed md:hidden ">
         <div className="btm-nav ">
           <NavLink className={"text-success"} to={"/"}>
             <button className="text-success">

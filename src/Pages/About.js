@@ -7,7 +7,6 @@ const About = () => {
     <div className='p-12'>Kapan Kapan ajlh kalo gk &nbsp;
        <a className='link' href="https://github.com/fforfachriza">mager</a>
        </div>
-    <Navbar />
     </>
   )
 }
