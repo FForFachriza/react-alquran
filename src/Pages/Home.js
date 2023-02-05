@@ -5,8 +5,10 @@ import Navbar from "../Components/Navbar";
 const Home = () => {
   return (
     <>
-    <IntroSearch />
-    <Navbar />
+      <div className="pb-16">
+        <IntroSearch />
+        <Navbar />
+      </div>
     </>
   );
 };
